@@ -9,12 +9,13 @@ import Buttonprops from "./components/button.js"
 import Tab from "./components/tab.js"
 
 
-
+import { useState } from "react"
 
 
 function App() {
 const todos=['todo1','todo2','todo3']
 
+const [show,setshow]=useState(false)
 
   return (
     console.log(styles),
@@ -46,7 +47,6 @@ const todos=['todo1','todo2','todo3']
       <Title className="App" > {process.env.NODE_ENV} </Title>
       <Title className="App" theme="dark"> abcjkhjkh </Title>
 
-        <Test/>
 
         
     
@@ -84,7 +84,11 @@ const todos=['todo1','todo2','todo3']
       <xxx/>
      
       
-     
+     <button
+     onClick={()=> setshow(show=>!show) }
+
+     className="bg-primary rounded text-white">  {show ? "gizle" :"göster"} </button> 
+     {show &&      <Test />}
    </div>
   );
 }
