@@ -1,6 +1,6 @@
 import {Button,Tab,Tabs}  from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Buttonprops from './components/button';
 
 function Abc()
 {
@@ -16,12 +16,11 @@ function Abc()
       <Button variant="light">Light</Button>
       <Button variant="dark">Dark</Button>
       <Button variant="link">Link</Button>
-      <Tabs
+      <Tabs 
       defaultActiveKey="home"
-      id="uncontrolled-tab-example"
-      className="mb-3"
+     
     >
-      <Tab eventKey="home" title="Home">
+      <Tab   eventKey="home" title="Home">
         Tab content for Home
       </Tab>
       <Tab eventKey="profile" title="Profile">
@@ -29,6 +28,7 @@ function Abc()
       </Tab>
       <Tab eventKey="contact" title="Contact" >
         <div>hiiijjj</div>
+        <Buttonprops hijj="hijjj" />
       </Tab>
     </Tabs>
       
