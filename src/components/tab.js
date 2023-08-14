@@ -17,14 +17,14 @@ const [active, setactive]= useState(activeTab);
                 onClick={
                 ()=> setactive(index)  }
 
-              
-                
-                
                 className= {active === index ? "bg-danger" : "bg-warning"}
                 key={index}>{tab.props.title}</button>)}
             </nav>
             {children}
         </div>
+                
+                
+              
 
 
     )
