@@ -4,7 +4,7 @@ import { useEffect,useState } from "react"
 
  function Test ()
 {
-    const[posta,postb]=useState(false)
+    const[posta,postb]=useState(false) 
     const [post,setpost]=useState(1)
 
 
