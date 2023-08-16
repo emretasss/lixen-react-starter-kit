@@ -40,7 +40,7 @@ useEffect(() => {console.log("compenent render oldu")
         {posta && JSON.stringify(posta)}
         <button onClick={()=> setpost( post=>post +1) } >diğer konuyu getir</button>
 
-    test compenent yapı.
+    test compenent yapı..
 </div>
 
 
