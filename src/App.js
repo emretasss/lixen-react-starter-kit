@@ -20,6 +20,7 @@ const [show,setshow]=useState(false)
         <Tab.Panel title="hakkında">tab panel2</Tab.Panel>
         <Tab.Panel title="Ayarlar" >tab panel3</Tab.Panel>
       </Tab>
+  
       </div>
         <img src="/logo192.png" alt="" /> 
       <Title className="App" > {process.env.NODE_ENV} </Title>
