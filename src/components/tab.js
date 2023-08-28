@@ -21,6 +21,7 @@ const [active, setactive]= useState(activeTab);
                 key={index}>{tab.props.title}</button>)}
             </nav>
             {children}
+
         </div>
                 
                 
@@ -38,6 +39,7 @@ Tab.Panel = function ({ children, title }) {
         <div>{children} {title} </div>
 
 
+    
 
     )
 
